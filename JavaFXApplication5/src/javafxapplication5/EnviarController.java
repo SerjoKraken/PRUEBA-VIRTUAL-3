@@ -42,6 +42,7 @@ public class EnviarController implements Initializable {
     @FXML
     private void getName(ActionEvent event) {
         nameString = name.getText();
+        name.setDisable(true);
     }
 
     @FXML
@@ -50,13 +51,22 @@ public class EnviarController implements Initializable {
         if (msj.length() > 50){
             System.out.println("es muy largo");
             mensaje.setText("");
+        } else{
+            mensaje.setDisable(true);
         }
         
     }
 
     @FXML
     private void getNum(ActionEvent event) {
-        numero = Integer.parseInt(num.getText());
+        try{
+           numero = Integer.parseInt(num.getText());
+           num.setDisable(true);
+        } catch (Exception e){
+            System.out.println("f");
+            num.setDisable(false);
+        }
+        
     }
     
 }
