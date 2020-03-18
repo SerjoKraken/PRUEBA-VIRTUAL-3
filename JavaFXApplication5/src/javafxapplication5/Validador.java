@@ -39,4 +39,11 @@ public class Validador {
    public static boolean validarMensaje(String mensaje){
        return mensaje.length() <=50;
    }
+   //Se admiten fechas en formato dd/mm/yyyy o dd-mm-yyyy
+   public static boolean validarFechaFormato(String fecha){
+       if (!fecha.matches("^([0-2][0-9]|3[0-1])(\\/|-)(0[1-9]|1[0-2])\\2(\\d{4})$")) {
+           return false;
+       }
+       return true;
+   }
 }
