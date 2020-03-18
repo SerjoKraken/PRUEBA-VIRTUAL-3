@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="javafxapplication5.FXMLControlllerCaptchaController">
+   <children>
+      <Text layoutX="249.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Validar SMS" />
+      <Text layoutX="238.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingrese Captcha" />
+      <TextField layoutX="210.0" layoutY="209.0" promptText="Contraseña" />
+      <Button layoutX="349.0" layoutY="318.0" mnemonicParsing="false" text="Aceptar" />
+      <Text layoutX="210.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SMSineitor" textAlignment="CENTER" wrappingWidth="132.82421875" />
+      <Pane layoutY="100.0" prefHeight="300.0" prefWidth="181.0" />
+      <Pane layoutX="419.0" layoutY="100.0" prefHeight="300.0" prefWidth="181.0" />
+   </children>
+</AnchorPane>
