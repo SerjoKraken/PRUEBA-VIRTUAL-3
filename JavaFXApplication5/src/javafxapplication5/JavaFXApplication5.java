@@ -36,6 +36,8 @@ public class JavaFXApplication5 extends Application {
         launch(args);
     }
     
-
+    public boolean validarFechaFormato (String s){
+        return false;
+    }
     
 }
