@@ -5,6 +5,7 @@
  */
 package javafxapplication5;
 
+import java.util.ArrayList;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -16,7 +17,13 @@ import javafx.stage.Stage;
  * @author cmsan
  */
 public class JavaFXApplication5 extends Application {
-    
+    ArrayList<String> companias= new ArrayList<>();
+    String pass="pass123";
+    /**
+     * 
+     * 
+     *  
+     */
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
@@ -25,6 +32,32 @@ public class JavaFXApplication5 extends Application {
         
         stage.setScene(scene);
         stage.show();
+        companias.add("Wom");
+        companias.add("Claro");
+        companias.add("Movistar");
+        companias.add("Entel");
+        /**
+         * Agregar a la lista de la interfaz y mostrar
+         */
+        /**
+         * cuadrText tendra la informacion recibida por el cuadro de texto y se 
+         * comprueba en el metdo siguuiente
+         */
+        String cuadrText="";
+        if (pass==cuadrText){
+            /**
+             * se apruueba y se envia el texto
+             * se muestra un mensaje
+             */
+            System.out.println("SE aprueba el mensaje");
+        }
+        else{
+            /**
+             * Se cancela el envio del mensaje
+             * Se envia mensaje de rechazo
+             */
+        }
+        
     }
 
     /**
