@@ -51,19 +51,20 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private void historial(ActionEvent event) {
-        SceneHandler.cargarVista(root, getClass().getResource("FXMLDocument.fxml"));  
+        SceneHandler.cargarVista(root, getClass().getResource("Historial.fxml"));  
     } 
     
     @FXML
     private void responder(ActionEvent event) {
-        SceneHandler.cargarVista(root, getClass().getResource("ModificarPlayListGeneral.fxml"));  
+        SceneHandler.cargarVista(root, getClass().getResource("Responder.fxml"));  
     } 
     
     @FXML
-    private void horaactual(ActionEvent event) {
-        SceneHandler.cargarVista(root, getClass().getResource("ModificarPlayListGeneral.fxml"));  
+    private void hora(ActionEvent event) {
+        SceneHandler.cargarVista(root, getClass().getResource("Hora.fxml"));  
     } 
     
+
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
