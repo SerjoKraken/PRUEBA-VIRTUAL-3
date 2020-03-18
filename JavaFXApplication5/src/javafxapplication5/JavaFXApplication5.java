@@ -17,6 +17,8 @@ import javafx.stage.Stage;
  */
 public class JavaFXApplication5 extends Application {
     
+    String fecha;
+    
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
@@ -33,5 +35,7 @@ public class JavaFXApplication5 extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+    
+
     
 }
