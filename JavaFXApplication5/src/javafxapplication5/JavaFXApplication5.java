@@ -16,15 +16,15 @@ import javafx.stage.Stage;
  * @author cmsan
  */
 public class JavaFXApplication5 extends Application {
-    
-    String fecha;
-    
+
     @Override
     public void start(Stage stage) throws Exception {
+        FechayHora fyh = new FechayHora();
+        fyh.mostrarAmbas();
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
-        
+
         Scene scene = new Scene(root);
-        
+
         stage.setScene(scene);
         stage.show();
     }
@@ -35,9 +35,9 @@ public class JavaFXApplication5 extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    
-    public boolean validarFechaFormato (String s){
+
+    public boolean validarFechaFormato(String s) {
         return false;
     }
-    
+
 }
