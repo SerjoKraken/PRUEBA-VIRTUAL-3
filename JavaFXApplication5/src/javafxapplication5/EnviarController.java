@@ -7,8 +7,10 @@ package javafxapplication5;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
 /**
@@ -20,12 +22,41 @@ public class EnviarController implements Initializable {
     
     @FXML
     private AnchorPane root;
+    @FXML
+    private TextField name;
+    @FXML
+    private TextField mensaje;
+    @FXML
+    private TextField num;
+    
+    public String nameString;
+    public int numero;
+    public String msj;
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
     }    
+
+    @FXML
+    private void getName(ActionEvent event) {
+        nameString = name.getText();
+    }
+
+    @FXML
+    private void getmsj(ActionEvent event) {
+        msj = mensaje.getText();
+        if (msj.length() > 50){
+            System.out.println("es muy largo");
+            mensaje.setText("");
+        }
+        
+    }
+
+    @FXML
+    private void getNum(ActionEvent event) {
+        numero = Integer.parseInt(num.getText());
+    }
     
 }
