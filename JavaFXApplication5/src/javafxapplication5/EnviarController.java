@@ -28,24 +28,35 @@ public class EnviarController implements Initializable {
     private TextField mensaje;
     @FXML
     private TextField num;
+    
+    public String nameString;
+    public int numero;
+    public String msj;
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
     }    
 
     @FXML
     private void getName(ActionEvent event) {
+        nameString = name.getText();
     }
 
     @FXML
     private void getmsj(ActionEvent event) {
+        msj = mensaje.getText();
+        if (msj.length() > 50){
+            System.out.println("es muy largo");
+            mensaje.setText("");
+        }
+        
     }
 
     @FXML
     private void getNum(ActionEvent event) {
+        numero = Integer.parseInt(num.getText());
     }
     
 }
